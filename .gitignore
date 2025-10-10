@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Environments
+.env
+.venv
+env/
+venv/
+
+# Testing
+.pytest_cache/
+
+# IDEs
+.idea/
+.vscode/
+
+# Text
+*.txt
+
+# Test
+.coverage
+
+# Format
+.ruff_cache/

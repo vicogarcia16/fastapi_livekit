@@ -1,0 +1,30 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+livekit-agents = {extras = ["elevenlabs", "openai", "azure"], version = "*"}
+livekit-plugins-noise-cancellation = "*"
+fastapi = "*"
+uvicorn = "*"
+pydantic-settings = "*"
+
+[dev-packages]
+ruff = "*"
+httpx = "*"
+pytest = "*"
+anyio = "*"
+pytest-cov = "*"
+
+[scripts]
+server = "uvicorn src.main:app --host 127.0.0.1 --port 8005 --reload"
+agente = "python -m src.services.agent_worker start"
+lint = "ruff check ."
+fix = "ruff check . --fix"
+format = "ruff format ."
+test = "pytest -v -s"
+test-cov = "pytest --cov=src --cov-report=term-missing"
+
+[requires]
+python_version = "3.13"
