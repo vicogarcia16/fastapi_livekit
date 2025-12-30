@@ -20,6 +20,7 @@ pytest-cov = "*"
 [scripts]
 server = "uvicorn src.main:app --host 127.0.0.1 --port 8005 --reload"
 agente = "python -m src.services.agent_worker start"
+agente-con = "python -m src.services.agent_worker console"
 lint = "ruff check ."
 fix = "ruff check . --fix"
 format = "ruff format ."

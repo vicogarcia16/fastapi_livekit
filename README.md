@@ -1,5 +1,9 @@
 # Agente de Voz para LiveKit con FastAPI, Azure y ElevenLabs
 
+![Python Version](https://img.shields.io/badge/python-3.11+-blue.svg?logo=python&logoColor=white)
+![LiveKit](https://img.shields.io/badge/LiveKit-RealTime-orange)
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=flat&logo=fastapi)
+
 > Un sofisticado asistente de voz en tiempo real para salas de LiveKit. Este proyecto proporciona una solución de backend completa, incluyendo un servidor FastAPI para la generación de tokens y un agente independiente que escucha, comprende y responde a los usuarios con una voz natural.
 
 ## ✨ Características Principales
@@ -139,3 +143,7 @@ Este proyecto utiliza `pytest` para las pruebas unitarias y `ruff` para el linti
     ```sh
     pipenv run format
     ```
+
+## 📄 Licencia
+
+Este proyecto está distribuido bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
